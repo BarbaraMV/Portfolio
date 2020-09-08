@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation {
+    position: fixed;
+    display: flex;
+    text-decoration: none;
+    margin-top: -1%;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 150%;
+    z-index: 10000;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 7%;
+    background-color: white;
+
+  }
+  
+  .navigation div{
+    width: 100%;
+    
+  }
+
+  .navigation a {
+    display: block;
+    transition: all 0.4s linear;
+    text-decoration: none;
+    color: inherit;
+
+  }
+  
+  /*botones*/
+  .navigation .btnM.active {
+      color: white;
+  }
+  
+  .btnM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      transition: background-color .2s;
+      padding-bottom: 5px;
+  }
+  
+  .btnM:hover {
+      cursor: pointer;
+      transition: background-color .4s;
+  }
+  
+  #btn1 {
+      color: #555;
+      border-top: 5px solid #555;
+  }
+  #btn1.active {
+    background: #555;
+  }
+  #btn1:hover {
+      color: white;
+      background-color: #555; 
+  }
+  
+  #btn2 {
+      color: #42C8C3;
+      border-top: 5px solid #42C8C3;
+  }
+  #btn2.active {
+    background: #42C8C3;
+  }
+  
+  #btn2:hover {
+      color: white;
+      background-color: #42C8C3; 
+  }
+  
+  #btn3 {
+      color: #6CAE21;
+      border-top: 5px solid #6CAE21;
+  }
+  #btn3.active {
+    background: #6CAE21;
+  }
+  
+  #btn3:hover {
+      color: white;
+      background-color: #6CAE21; 
+  }
+  
+  #btn4 {
+      color: #7e39ac;
+      border-top: 5px solid #7e39ac;
+  }
+  #btn4.active {
+    background: #7e39ac;
+  }
+  
+  #btn4:hover {
+      color: white;
+      background-color: #7e39ac; 
+  }
+  
+  #btn5 {
+	color: #F74B61;
+	border-top: 5px solid #F74B61;
+}
+#btn5.active {
+  background: #F74B61;
+}
+
+#btn5:hover {
+	color: white;
+	background-color: #F74B61; 
+}
+
+
+
+#bodyHome {
+    margin-top: auto;
+    background-image: url(./image/fondo/acuarela4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: inherit; 
+    width: 100%;
+    height: 100vh;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    text-align: -webkit-center;
+    background-attachment: fixed;
+}
+
+
+#my-name {
+    font-family: 'Stalemate', cursive;    
+    font-size: 5vh;
+    text-align: center;
+    color:#ffffff;
+    z-index: 1000;
+}
+
+#frontEnd{
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 75%; 
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    z-index: 10000;
+
+}
+
+
+#my-ilustration {
+  margin: -80px;
+  width: 100%;
+  align-content: center;
+}
+#my-ilustration img {
+  display: flex;
+  width: 20%;
+  
+}
+
+  /*animacion inicio*/
+  .animationInit svg {
+    margin-top: 50px;
+    position: relative;
+    font: 10em;
+    
+  }
+  
+  .animationInit svg text {
+    fill: #ffffff;
+    stroke: #00e1ff;
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-dasharray: 100% 0;
+    animation: stroke-offset 3s ease-out;
+  }
+  
+  #frontEnd svg {
+    position: relative;
+    font-family: 'Ribeye Marrow', cursive;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  #frontEnd svg text {
+    margin-top: -100px;
+    fill: #ffffff;
+    stroke: #00e1ff;
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-dasharray: 100% 0;
+    animation: stroke-offset 5s ease-out;
+  }
+
+
+#aboutMe {
+    background-color: #2AB5C9;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; 
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: -webkit-center;
+    background-attachment: fixed;
+
+}
+
+#my-title{
+  font-family: 'Ribeye Marrow', cursive;
+  font-size: 400% !important;
+  text-align: center;
+  display: block;
+  color: #0461B7;
+  z-index: 100;
+  text-align: left;
+  margin-left: 16%;
+  padding: 3%;
+}
+ 
+
+#my-description {
+  display: flex;
+  font-size: 150%;
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 0.09em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 35%;
+  height: 25vw;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+
+
+#my-photo {
+  background-image: url(./image/ilustraciones/10298955_10203764247565724_2138754001223116391_n.jpg);
+  position: sticky;
+  width: 25%;
+  height: 49%;
+  border: 9px solid #0A76BF;
+  box-sizing: border-box;
+  border-radius: 250px;
+  background-size: contain;
+  float: right;
+  margin-right: 15%;
+}
+
+
+#skills {
+  background-color: #60E1BC;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover; 
+  width: 100%;
+  height: 120vh;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: -webkit-center;
+  background-attachment: fixed;
+}
+
+#title-skills {
+  font-family: 'Ribeye Marrow', cursive;
+  padding-bottom: 0px;
+  font-size: 600%;
+  text-align: center;
+  display: block;
+  color: #318970;
+  z-index: 100;
+  text-align: right;
+  margin-right: 10vw;
+  padding: 3vw;
+}
+
+
+#photos-skills {
+    display: flex;
+    padding: 8%;
+    margin-left: 7%;
+    margin-right: 7%;
+    flex-flow: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: -10vw;
+}
+
+#photos-skills img{
+  margin: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 4.5rem;
+}
+
+/* animacion tooltip para skills */
+
+.container{
+  position: relative;
+}
+
+.container:hover .tooltip{
+  opacity: 1;
+  top: 3rem;
+}
+
+.tooltip{
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+  opacity: 0;
+  position: absolute;
+  top: -1rem;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.25s, top 0.25s;
+  z-index: 100;
+}
+
+.tooltip .content{
+  background: #318970;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25rem;
+}
+
+#project {
+  background-image: url(./image/fondo/acuarela4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover; 
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: -webkit-center;
+  background-attachment: fixed;
+}
+
+#title-project {
+  font-family: 'Ribeye Marrow', cursive;
+  padding-bottom: 0px;
+  font-size: 600%;
+  text-align: center;
+  display: block;
+  color: #871189;
+  z-index: 100;
+  text-align: left;
+  margin-right: 10vw;
+  padding: 3vw;
+}
+
+/* carrusel definitivo */ 
+
+
+#slideshow {
+  margin: auto;
+  padding-top: 50px;
+  height: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slideshow-title {
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 0.07em;
+  font-size: 32px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 0%;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.entire-content {
+  margin: auto;
+  width: 190px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.content-carousel {
+  width: 100%;
+  margin-top: 55%;
+  position: absolute;
+  float: right;
+  animation: rotate 30s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.content-carousel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.content-carousel figure {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* If you have more images let's say n ones. Then you need to duplicate below units to nth-child(n + 1), and you need to fix the new degree numbers in rotateY() as well. The formula is 360deg / n for each increment. The first child will always be 0 deg and the last will be 360deg. */
+.content-carousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+} .content-carousel figure:nth-child(2) {
+  transform: rotateY(72deg) translateZ(300px);
+} .content-carousel figure:nth-child(3) {
+  transform: rotateY(144deg) translateZ(300px);
+} .content-carousel figure:nth-child(4) {
+  transform: rotateY(216deg) translateZ(300px);
+}.content-carousel figure:nth-child(5) {
+  transform: rotateY(288deg) translateZ(300px);
+}
+
+.shadow {
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 5px;
+}
+
+.content-carousel img {
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+} 
+.content-carousel img:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+  opacity: 0.7;
+}
+
+@keyframes rotate {
+  from {tranform: rotateY(0deg);} 
+  to {transform: rotateY(360deg);}
+}
+
+.modal {
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 0.07em;
+  color: #871189;
+  display: none; /* Hidden by default */
+  position: fixed;
+  justify-content: center;
+  z-index: 1; /* Sit on top */
+  padding-top: 10%;
+  left: 25%;
+  top: 100px;
+  width: 50%;
+  height: 50%;
+  background-color: #ffffff;
+  opacity: 0.9;
+  border-radius: 30px;
+  
+}
+
+.modal h2 {
+  margin-top: -10%;
+  font-size: 50px;
+}
+
+.modal p {
+  margin-top: -3%;
+  font-size: 20px;
+}
+
+
+.modal-content {
+  font-family: 'Architects Daughter', cursive;
+  letter-spacing: 0.07em;
+  justify-self: center;
+  margin: 3%;
+  display: block;
+  width: 50%;
+  max-width: 700px;
+}
+
+.caption {
+  margin: 0;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: auto;
+}
+
+
+.goToProject{
+  background-color: #ffffff;
+  color: #7e39ac;
+  font-family: 'Architects Daughter', cursive;
+  font-size: x-large;
+  letter-spacing: 0.07em;
+  padding: 1rem;
+  margin: 1rem;
+  outline: none; /*to disable square-shaped transparent outline*/
+  border: solid 4px #7e39ac;
+  border-radius: 10px;
+  width: 15rem;
+  cursor: pointer;
+}
+
+.goToProject.active {
+background: #7e39ac;
+}
+
+.goToProject:hover {
+  color: white;
+  background-color: #7e39ac; 
+}
+
+/* Animation */
+.modal-content, .caption {
+  animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1);}
+  to {transform: scale(1);}
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #00e1ff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* contacto */
+
+#contact {
+background-color: #2AB5C9;
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: cover; 
+width: 100%;
+height: 100vh;
+flex-wrap: wrap;
+justify-content: flex-start;
+text-align: -webkit-center;
+background-attachment: fixed;
+
+}
+
+#title-contact {
+  font-family: 'Ribeye Marrow', cursive;
+  padding-bottom: 0px;
+  font-size: 250%;
+  text-align: center;
+  display: block;
+  color: #076674;
+  z-index: 100;
+  text-align: center;
+  padding: 4vw;
+}
+
+
+  @media only screen ( min-width: 780px ) {
+    body {
+      background-position: 40% 100%;
+    }
+    .carousel {
+      height: 60vh !important;
+    }
+    .carousel .carousel-item {
+      height: 70% !important;
+      width:70% !important; 
+    }
+    svg {
+      width: 100%;
+      max-width: 700px;
+      height: 100%;
+      margin-top: 5%;
+    }
+    .overlay {
+      height: 70%;
+    }
+    .contactText {
+      text-align: center;
+      margin-top: 0;
+      z-index: 10;
+    }
+    #sobreMi {
+      width: 100%;
+      margin-bottom: 80px;
+      margin-top: 350px;
+    }
+    #inicio {
+      margin-top: 50px;
+    }
+    .animationInit {
+      margin-bottom: -20px;
+    }
+  }
+  
+  @media only screen and (min-width: 650px) {
+    body {
+      background-position: 40% 30%;
+    }
+    .carousel {
+      height: 70vh !important;
+    }
+     .carousel .carousel-item {
+      width:40% !important; 
+      height: 80% !important;
+    }
+    svg {
+      width: 80%;
+      height: 80%;
+      margin-top: 0;
+    }
+    .overlay {
+      height: 30%;
+    }
+    .contactText {
+      margin-top: -30px;
+    }
+    #sobreMi {
+      width: 70%;
+      margin-bottom: 100px;
+      margin-top: 0;
+      min-width: 900px;
+    }
+    .contacto {
+      margin-bottom: 80px;
+    }
+    #inicio {
+      margin-top: 0;
+    }
+    .animationInit {
+      margin-bottom: -0;
+    }
+  }
+  
+  /*animacion contacto*/
+  svg {
+    position: relative;
+    font: 20em Ubuntu;
+  }
+  
+  svg text {
+    fill: #F74B61;
+    stroke: #111;
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-dasharray: 100% 0;
+    animation: stroke-offset 3s ease-out;
+  }
+  
+  @keyframes stroke-offset {
+    0% {
+      fill-opacity: 0;
+      stroke-width: 0;
+      stroke-dasharray: 0% 100%;
+    }
+    25% {
+      stroke-width: 3px;
+    }
+    50% {
+      fill-opacity: 0;
+    }
+    75% {
+      stroke-width: 3px;
+    }
+    100% {
+      stroke-width: 0;
+    }
+  }
+  
+
+  
