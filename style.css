@@ -577,6 +577,18 @@ background-attachment: fixed;
   padding: 4vw;
 }
 
+#contact-icon{
+  display: flex;
+  padding: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
+  flex-flow: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+
+
 
   @media only screen ( min-width: 780px ) {
     body {

@@ -1,30 +1,4 @@
-$(document).ready(function() {
-  // carrusel del portafolio
-  $('.carousel').carousel({
-      dist:-60,
-      indicators: true
-    });
-
-  $('.btnM').click(x => {
-    markMenu(x.target.id);
-  })
-
-});
-
-// cambia los estilos del menú
-function markMenu(btn) {
-  $('.btnM').removeClass('active');
-  $('#' + btn).addClass('active');
-}
-
-/* 
- * Credit:
- * Modal: https://www.runoob.com/try/try.php?filename=trycss_image_modal_js
- * 3D-carrousel: https://codepen.io/jaskiranchhokar/pen/wmGXav
- * Modified by Hilbert Kong
- */
-
-var modals = document.getElementsByClassName("modal");
+const modals = document.getElementsByClassName("modal");
 
 for(let i = 0; i < modals.length; i++) {
     let modal = modals[i];
