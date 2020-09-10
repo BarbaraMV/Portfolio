@@ -133,7 +133,7 @@
 
 #my-name {
     font-family: 'Stalemate', cursive;    
-    font-size: 250%;
+    font-size: 15%;
     text-align: center;
     color:#ffffff;
     z-index: 1000;
@@ -1247,7 +1247,7 @@ background-attachment: fixed;
     }
   }
   
-  /*animacion contacto
+  /*animacion contacto */
   svg {
     position: relative;
     font: 20em Ubuntu;
@@ -1284,4 +1284,3 @@ background-attachment: fixed;
   
 
   
-*/
