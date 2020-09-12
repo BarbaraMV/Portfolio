@@ -890,14 +890,13 @@ background-attachment: fixed;
     width: 100vw;
     height: 3%;
     font-size: xx-small;
-    margin-top: -3%;
+    margin-top: -5%;
     z-index: 10000;
   }
   
   /* nombre y front end */
 
   #bodyHome {
-    background-size: contain;
     width: 100vw;
     height: 50vh;
   }
@@ -909,11 +908,9 @@ background-attachment: fixed;
     font-size: 55%;
   }
 
-  #my-ilustration {
-    display: flex;
-    margin-top: 10%;
-    width: 200%;
-    margin-left: 30%;
+  #my-ilustration img{
+    margin-top: 35%;
+    width: 40%;
   }
 
   /* Segunda vista, sobre mi */
@@ -1175,6 +1172,318 @@ background-attachment: fixed;
   }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+   /* pantalla 1 */
+  /* barra de navegacion */
+  .header {
+    position: fixed;
+    display: flex;
+    width: 10vw;
+  }
+  .navigation {
+    position: fixed !important;
+    width: 100vw;
+    height: 3%;
+    font-size: small;
+    margin-top: -2.2%;
+    z-index: 10000;
+  }
+  
+  /* nombre y front end */
+
+  #bodyHome {
+    width: 100vw;
+    height: 80vh;
+  }
+  #my-name {
+    margin-top:
+    font-size: 20%;
+  }
+
+  #frontEnd {
+    font-size: 55%;
+  }
+
+  #my-ilustration img{
+    margin-top: 20%;
+    width: 35%;
+  }
+
+  /* Segunda vista, sobre mi */
+
+  #aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+  } 
+
+  #my-title {
+    padding: 9px;
+    margin-top: 3%;
+  }
+  
+  #my-title p{
+    font-size: 55%;
+    margin-left: -50%
+  }
+
+  #my-photo {
+    margin-top: 7%;
+    width: 37%;
+    align-self: center;
+  }
+
+  #my-description p{
+    margin-top: -45%;
+    font-size: medium;
+    height: 127%;
+    margin-right: -60%;
+    margin-left: -60%;
+    text-align: left;
+  }
+
+  /* tercera vista, SKILLS */
+  #skills {
+    display: flex;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 147vh;
+  }
+
+  #title-skills p{
+    font-size: 35%;
+  }
+
+  .containter {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  #photos-skills img {
+    display: grid;
+    flex-wrap: wrap;
+    width: 45%;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  #photos-skills {
+    display: flex;
+    padding: 1%;
+    flex-flow: wrap;
+    align-items: flex-end;
+    margin-top: -10vw;
+    justify-content: space-around;
+}
+
+   /* tooltip  */
+   /* animacion tooltip para skills */
+
+.container{
+  position: relative;
+}
+
+.container:hover .tooltip{
+  width: 50vw;
+  opacity: 0.8;
+  top: 3rem;
+}
+
+.tooltip{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+  opacity: 0;
+  position: absolute;
+  top: -1rem;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.25s, top 0.25s;
+  z-index: 100;
+}
+
+.tooltip .content{
+  background: #318970;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25rem;
+}
+
+  /* cuarta vista, mis proyectos */
+
+  #project {
+    width: 100vw;
+    height: 140vh;
+  }
+  
+  #title-project{
+    font-size: 200%;
+  }
+
+.entire-content {
+  margin: -280px 10px 0 200px;
+  width: 80vw;
+  height: 150vh;
+  perspective: 1000px;
+  position: absolute;
+  padding-top: 20px;
+  }
+
+  .content-carousel img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-carousel {
+    width: 50%;
+    animation: rotate 30s infinite linear;
+    transform-style: preserve-3d;
+  }
+
+  .content-carousel figure {
+    width: 50%;
+    height: 50%;
+    border: 1px solid #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .content-carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(200px);
+  } .content-carousel figure:nth-child(2) {
+    transform: rotateY(72deg) translateZ(200px);
+  } .content-carousel figure:nth-child(3) {
+    transform: rotateY(144deg) translateZ(200px);
+  } .content-carousel figure:nth-child(4) {
+    transform: rotateY(216deg) translateZ(200px);
+  }.content-carousel figure:nth-child(5) {
+    transform: rotateY(288deg) translateZ(200px);
+  }
+
+  /* modal del carrusel */
+
+  .modal {
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.07em;
+    color: #871189;
+    display: none; /* Hidden by default */
+    position: fixed;
+    justify-content: center;
+    z-index: 1; /* Sit on top */
+    padding-top: 10%;
+    left: 10%;
+    top: 100px;
+    width:  70%;
+    height: 40%;
+    background-color: #ffffff;
+    opacity: 0.9;
+    border-radius: 30px;
+  }
+  
+  .modal h2 {
+    margin-top: -2% ;
+    font-size: 24px;
+  }
+  
+  .modal p {
+    margin-top: -3%;
+    font-size: 18px;
+  }
+  
+  .modal-content {
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.07em;
+    justify-self: center;
+    margin-left:1px;
+    display: block;
+    width: 50%%;
+  }
+
+  .close {
+    font-size: 20px;
+  }
+  
+  .caption {
+    margin: 0;
+    display: block;
+    width: 10%;
+    max-width: 100px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 10px;
+  }
+
+  .goToProject{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.07em;
+    outline: none; /*to disable square-shaped transparent outline*/
+    border: solid 4px #7e39ac;
+    border-radius: 10px;
+    width: 70px;
+    height: 5px;
+    cursor: pointer;
+  }
+  
+  .goToProject.active {
+  background: #7e39ac;
+  }
+  
+  .goToProject:hover {
+    color: white;
+    background-color: #7e39ac; 
+  }
+
+  /* vista 5, contacto */
+  #contact {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  #title-contact {
+    font-size: 250%;
+  }
+
+  #contact-icon img {
+  width: 70%;
+  display: flex;
+  padding: 3%;
+  margin-left: 23%;
+  margin-right: 7%;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  }
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
 
 
 
