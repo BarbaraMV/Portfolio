@@ -245,12 +245,13 @@
 }
 
 #skills {
+  display:flex;
   background-color: #60E1BC;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover; 
   width: 100%;
-  height: 120vh;
+  height: 160vh;
   flex-wrap: wrap;
   justify-content: flex-start;
   text-align: -webkit-center;
