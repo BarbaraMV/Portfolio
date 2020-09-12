@@ -957,7 +957,7 @@ background-attachment: fixed;
     display: flex;
     background-attachment: fixed;
     width: 100vw;
-    height: 313vh;
+    height: 350vh;
   }
 
   #title-skills p{
@@ -1153,7 +1153,7 @@ background-attachment: fixed;
   /* vista 5, contacto */
   #contact {
     width: 100vw;
-    height: 50vh;
+    height: 55vh;
   }
 
   #title-contact {
@@ -1173,6 +1173,8 @@ background-attachment: fixed;
 
 }
 
+
+/* TABLET */ 
 @media (min-width: 768px) and (max-width: 1024px) {
 
   body {
@@ -1255,7 +1257,7 @@ background-attachment: fixed;
     display: flex;
     background-attachment: fixed;
     width: 100vw;
-    height: 147vh;
+    height: 165vh;
   }
 
   #title-skills p{
@@ -1323,7 +1325,7 @@ background-attachment: fixed;
 
   #project {
     width: 100vw;
-    height: 140vh;
+    height: 150vh;
   }
   
   #title-project{
@@ -1405,7 +1407,7 @@ background-attachment: fixed;
     justify-self: center;
     margin-left:1px;
     display: block;
-    width: 50%%;
+    width: 50%;
   }
 
   .close {
@@ -1447,7 +1449,7 @@ background-attachment: fixed;
   /* vista 5, contacto */
   #contact {
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
   }
 
   #title-contact {
@@ -1474,6 +1476,171 @@ background-attachment: fixed;
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  body {
+    margin: 0;  
+    padding: 0;
+  }
+  #bodyHome {
+    width: 100vw;
+
+  }
+  #my-ilustration img{
+    margin-top: 10%;
+  }
+
+  #my-photo {
+    margin-top: 3%;
+    width: 30%;
+  }
+
+   /* cuarta vista, mis proyectos */
+
+   #project {
+    width: 100vw;
+    height: 160vh;
+  }
+  
+  #title-project{
+    margin-top: -5%;
+    font-size: 200%;
+  }
+
+.entire-content {
+  margin: -330px 10px 0 200px;
+  width: 80vw;
+  height: 150vh;
+  perspective: 1000px;
+  position: absolute;
+  padding-top: 20px;
+  }
+
+  .content-carousel img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-carousel {
+    width: 50%;
+    animation: rotate 30s infinite linear;
+    transform-style: preserve-3d;
+  }
+
+  .content-carousel figure {
+    width: 50%;
+    height: 50%;
+    border: 1px solid #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .content-carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(170px);
+  } .content-carousel figure:nth-child(2) {
+    transform: rotateY(72deg) translateZ(170px);
+  } .content-carousel figure:nth-child(3) {
+    transform: rotateY(144deg) translateZ(170px);
+  } .content-carousel figure:nth-child(4) {
+    transform: rotateY(216deg) translateZ(170px);
+  }.content-carousel figure:nth-child(5) {
+    transform: rotateY(288deg) translateZ(170px);
+  }
+
+  /* modal del carrusel */
+
+  .modal {
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.07em;
+    color: #871189;
+    display: none; /* Hidden by default */
+    position: fixed;
+    justify-content: center;
+    z-index: 1; /* Sit on top */
+    padding-top: 10%;
+    left: 10%;
+    top: 100px;
+    width:  70%;
+    height: 45%;
+    background-color: #ffffff;
+    opacity: 0.9;
+    border-radius: 30px;
+  }
+  
+  .modal h2 {
+    margin-top: -2% ;
+    font-size: 24px;
+  }
+  
+  .modal p {
+    margin-top: -3%;
+    font-size: 18px;
+  }
+  
+  .modal-content {
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.07em;
+    justify-self: center;
+    margin-left:1px;
+    display: block;
+    width: 50%;
+  }
+
+  .close {
+    font-size: 20px;
+  }
+  
+  .caption {
+    margin: 0;
+    display: block;
+    width: 10%;
+    max-width: 100px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 10px;
+  }
+
+  .goToProject{
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    outline: none; /*to disable square-shaped transparent outline*/
+    border: solid 4px #7e39ac;
+    border-radius: 10px;
+    width: 90px;
+    height: 5px;
+    cursor: pointer;
+  }
+  
+  .goToProject.active {
+  background: #7e39ac;
+  }
+  
+  .goToProject:hover {
+    color: white;
+    background-color: #7e39ac; 
+  }
+
+  /* vista 5, contacto */
+  #contact {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
+  #title-contact {
+    font-size: 250%;
+  }
+
+  #contact-icon img {
+  width: 80%;
+  padding: 18%;
+  margin-left: -70%;
+  margin-right: -50%;
+  margin-top: -15%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
   
   
   
