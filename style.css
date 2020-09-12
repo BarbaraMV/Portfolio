@@ -591,31 +591,32 @@ background-attachment: fixed;
     position: fixed !important;
     width:100vw;
     height: 3%;
-    font-size: 8px;
-    margin-top: -2%;
+    font-size: 10px;
+    margin-top: -5%;
     z-index: 10000;
   }
   
   #bodyHome {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     text-align: center;
   }
   /* nombre y front end */
   #my-name {
-    font-size: 20%;
+    font-size: 26%;
+    text-align: center;
+    margin-left: 20%;
   }
 
   #frontEnd {
     font-size: 55%;
   }
 
-  #my-ilustration {
-    display: flex;
-    margin-top: 10%;
-    width: 200%;
-    margin-left: 30%;
+  #my-ilustration img{
+    margin-top: 35%;
+    width: 60%;
+    margin-left: 65%;
   }
 
   /* Segunda vista, sobre mi */
@@ -625,7 +626,7 @@ background-attachment: fixed;
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
   } 
 
   #my-title {
@@ -650,11 +651,11 @@ background-attachment: fixed;
 
   #my-description p{
     display: flex;
-    font-size: x-small;
+    font-size: small;
     margin-top: -105%;
     margin-left: -75%;
     margin-right: -60%;
-    height: 300%;
+    height: 280%;
   }
 
   /* tercera vista, SKILLS */
@@ -730,7 +731,7 @@ background-attachment: fixed;
 
   #project {
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
   }
   
   #title-project{
@@ -788,17 +789,17 @@ background-attachment: fixed;
     justify-content: center;
     z-index: 1; /* Sit on top */
     padding-top: 10%;
-    left: 20px;
-    top: 600px;
-    width: 40%;
-    height: 20%;
+    left: 60px;
+    top: 400px;
+    width: 70%;
+    height: 35%;
     background-color: #ffffff;
     opacity: 0.9;
     border-radius: 30px;
   }
   
   .modal h2 {
-    margin-top: -10%;
+    margin-top: -5%;
     font-size: 14px;
   }
   
@@ -813,7 +814,7 @@ background-attachment: fixed;
     justify-self: center;
     margin-left: 10px;
     display: block;
-    width: 65%;
+    width: 70%;
   }
 
   .close {
@@ -855,7 +856,7 @@ background-attachment: fixed;
   /* vista 5, contacto */
   #contact {
     width: 100vw;
-    height: 70vh;
+    height: 55vh;
   }
 
   #title-contact {
