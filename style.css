@@ -597,16 +597,13 @@ background-attachment: fixed;
   }
   
   #bodyHome {
-    display: flex;
     width: 100vw;
     height: 60vh;
     text-align: center;
   }
   /* nombre y front end */
   #my-name {
-    font-size: 26%;
-    text-align: center;
-    margin-left: 20%;
+    font-size: 19%;
   }
 
   #frontEnd {
@@ -615,8 +612,8 @@ background-attachment: fixed;
 
   #my-ilustration img{
     margin-top: 35%;
-    width: 60%;
-    margin-left: 65%;
+    width: 40%;
+    margin-left: 55%;
   }
 
   /* Segunda vista, sobre mi */
@@ -653,9 +650,9 @@ background-attachment: fixed;
     display: flex;
     font-size: small;
     margin-top: -105%;
-    margin-left: -75%;
+    margin-left: -55%;
     margin-right: -60%;
-    height: 280%;
+    height: 300%;
   }
 
   /* tercera vista, SKILLS */
@@ -667,7 +664,6 @@ background-attachment: fixed;
 
   #title-skills p{
     font-size: 35%;
-    margin-right: 45%;
   }
 
   .containter {
