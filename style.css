@@ -221,7 +221,7 @@
 
 #my-description {
   display: flex;
-  font-size: 150%;
+  font-size: 16px;
   font-family: 'Architects Daughter', cursive;
   letter-spacing: 0.09em;
   flex-direction: row;
