@@ -453,13 +453,13 @@
 }
 
 .modal h2 {
-  margin-top: -10%;
+  margin-top: -15%;
   font-size: 50px;
 }
 
 .modal p {
-  margin-top: -3%;
-  font-size: 20px;
+  margin-top: 0;
+  font-size: 16px;
 }
 
 .modal-content {
@@ -487,6 +487,7 @@
   background-color: #ffffff;
   color: #7e39ac;
   font-family: 'Architects Daughter', cursive;
+  text-decoration: none;
   font-size: x-large;
   letter-spacing: 0.07em;
   padding: 1rem;
